@@ -11,6 +11,8 @@ Perhaps, you are also as lazy as I am, so please be my guest to use the app.
 Merry Xmas & happy new year!
 
 # Quick run
-`library(shiny)
+```
+library(shiny)
+
 runGitHub("tombala-draweR", "altintasali")
-`
+```
