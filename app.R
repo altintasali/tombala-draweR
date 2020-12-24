@@ -7,13 +7,13 @@ library(reshape2)
 library(ggplot2)
 
 
-# Define UI for application that draws a histogram
+# Define UI for application
 ui <- fluidPage(
     
     # Application title
     titlePanel("tombala-draweR"),
     
-    # Sidebar with a slider input for number of bins 
+    # Sidebar with action buttons
     sidebarLayout(
         sidebarPanel(
             actionButton(inputId = "draw_number",
@@ -26,7 +26,7 @@ ui <- fluidPage(
             )
         ),
         
-        # Show a plot of the generated distribution
+        # Show main panel
         mainPanel(
             htmlOutput("currentNumber"),
             plotOutput("heatmap"),
@@ -35,7 +35,7 @@ ui <- fluidPage(
     )
 )
 
-# Define server logic required to draw a histogram
+# Define server logic 
 server <- function(input, output) {
     
     dat <- reactive({
