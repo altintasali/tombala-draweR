@@ -19,4 +19,4 @@ runGitHub("tombala-draweR", "altintasali")
 # Screenshot
 This is how it looks like: 
 
-![Alt text](./images/tombala1.jpg?raw=true "Screenshot1")
+![Alt text](./images/tombala1.png?raw=true "Screenshot1")
