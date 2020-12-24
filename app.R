@@ -6,7 +6,6 @@ library(shiny)
 library(reshape2)
 library(ggplot2)
 
-
 # Define UI for application
 ui <- fluidPage(
     
@@ -93,7 +92,7 @@ server <- function(input, output) {
     })
     
     output$lastNumber <- renderTable({
-        lastnumber <- tail(dat()[1:currentID(),], 5)
+        lastnumber <- head(dat()[currentID():0,], 5)
     })
     
 }
